@@ -18,12 +18,13 @@ export class RegisterComponent {
   ){  }
 
   registerForm = this.builder.group({
-    id: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(5)])),
+    id: this.builder.control('', Validators.compose([Validators.required, Validators.minLength(4)])),
     name: this.builder.control('', Validators.required),
     password: this.builder.control('', Validators.compose([
-      Validators.required, Validators.pattern(
-        '^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}'
-        )
+      Validators.required, 
+      // Validators.pattern(
+      //   '^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$'
+      //   )
     ])),
     email: this.builder.control('', Validators.compose([Validators.required, Validators.email])),
     gender: this.builder.control('male'),
