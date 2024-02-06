@@ -12,7 +12,7 @@ export class AuthService {
     return this.http.get(this.baseAPI);
   }
 
-  getById(id:string){
+  getById(id:string ){
     return this.http.get(this.baseAPI+'/'+id);
   }
 
@@ -24,5 +24,13 @@ export class AuthService {
     return this.http.put(this.baseAPI+'/'+id,updateData);
   }
 
+  isLoggedIn(){
+    return sessionStorage.getItem('username') != null
+  }
   
+  getUserRole(){
+    return sessionStorage.getItem('role') != null ?
+     sessionStorage.getItem('role')?.toString() :
+      '';
+  }
 }

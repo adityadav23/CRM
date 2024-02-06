@@ -15,5 +15,17 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "user": [
+    
+    {
+      "id": "tets",
+      "name": "test",
+      "password": "Test@123",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    }
+  ]
 }
