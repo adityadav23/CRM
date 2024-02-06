@@ -30,7 +30,9 @@ import { UpdatepopupComponent } from './updatepopup/updatepopup.component';
     MaterialModule,
     ReactiveFormsModule,
     HttpClientModule,
-    ToastrModule
+    ToastrModule.forRoot({
+      positionClass :'toast-bottom-right'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]
