@@ -2,6 +2,9 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { AuthService } from '../service/auth.service';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatDialog } from '@angular/material/dialog';
+import { UpdatepopupComponent } from '../updatepopup/updatepopup.component';
 
 @Component({
   selector: 'app-user-list',
@@ -10,7 +13,8 @@ import { MatPaginator } from '@angular/material/paginator';
 })
 export class UserListComponent implements OnInit {
   constructor(
-    private authService: AuthService
+    private authService: AuthService,
+    private dialog: MatDialog
   ){}
   
   userList: any;
@@ -30,7 +34,14 @@ export class UserListComponent implements OnInit {
     })
   }
   
-  updatePopup(elementId: any){
-      
+  updatePopup(id: any){
+      this.dialog.open(UpdatepopupComponent),{
+        enterAnimationDuration:'1000ms',
+        exitAnimationDuration: '500ms',
+        width: "50%",
+        data:{
+          username:id
+        }
+      }
   }
 }
