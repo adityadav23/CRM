@@ -19,13 +19,80 @@
   "user": [
     
     {
-      "id": "tets",
+      "id": "test",
       "name": "test",
       "password": "Test@123",
       "email": "test@gmail.com",
       "gender": "male",
       "role": "admin",
       "isActive": true
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "password": "Test@123",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isActive": true
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "password": "Test@123",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "password": "Test@123",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "password": "Test@123",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "password": "Test@123",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "password": "Test@123",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isActive": true
+    },
+    {
+      "id": "test",
+      "name": "test",
+      "password": "Test@123",
+      "email": "test@gmail.com",
+      "gender": "male",
+      "role": "user",
+      "isActive": true
     }
+    
+    
+
+
   ]
 }
