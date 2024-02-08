@@ -94,5 +94,12 @@
     
 
 
+  ],
+  "role":[
+    {"name":"HR", "code":"hr"},
+    {"name":"Staff", "code":"staff"},
+    {"name":"Sales", "code":"sales"},
+    {"name":"Tester", "code":"tester"},
+    {"name":"Manager", "code":"manager"}
   ]
 }

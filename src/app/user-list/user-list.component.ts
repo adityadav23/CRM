@@ -33,15 +33,20 @@ export class UserListComponent implements OnInit {
       this.dataSource.paginator = this.paginator;
     })
   }
+
+  updateUser(code: any){
+    this.openDialog('300ms','100ms',code);
+  }
   
-  updatePopup(id: any){
-      this.dialog.open(UpdatepopupComponent),{
-        enterAnimationDuration:'1000ms',
-        exitAnimationDuration: '500ms',
-        width: "50%",
+  openDialog(enterAnimationDuration: any,exitAnimationDuration:any,code:string){
+    const popup = this.dialog.open(UpdatepopupComponent,{
+        enterAnimationDuration,
+        exitAnimationDuration,
+        width: "20%",
         data:{
-          username:id
+          username:code
         }
-      }
+      });
+      popup.afterClosed().subscribe(res=>{this.loadUser()})
   }
 }
